@@ -2,14 +2,12 @@
 4.1 Напишите код для функции sum (см. выше).  
 */
 function sum(list) {
-    if (list.length == 0) {
-        return 0
-    }
+    if (list.length == 0) return 0
     return list[0] + sum(list.splice(1)) 
 }
 
 let x = sum([1, 2, 3]);
-console.log(x);
+console.log('recursive sum', x);
 
 /* 
 4.2 Напишите рекурсивную функцию для подсчета
@@ -25,7 +23,7 @@ function count(list) {
 }
 
 x = count([1, 2, 3]);
-console.log(x);
+console.log('recursive count', x);
 
 function max(list) {
     if (list.length == 2) {
@@ -44,7 +42,7 @@ function max(list) {
 }
 
 x = max([1, 2, 3]);
-console.log(x);
+console.log('recursive max', x);
 
 
 /* const getLess = (list, pivot) => {
@@ -121,4 +119,4 @@ function quickSort(items, left, right) {
 // first call
 const items = [10, 5, 2, 3];
 var result = quickSort(items, 0, items.length - 1);
-console.log(result);
+console.log('quicksort', result.join(' '));

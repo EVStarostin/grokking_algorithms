@@ -54,8 +54,8 @@ function find_lowest_cost_node(costs) {
     return lowest_cost_node 
 }
 
-console.log(JSON.stringify(parents, '', 2));
-console.log(JSON.stringify(costs, '', 2));
+console.log('parents', JSON.stringify(parents, '', 2));
+console.log('costs', JSON.stringify(costs, '', 2));
 let path = 'fin';
 makePath(parents['fin']);
 console.log(path);

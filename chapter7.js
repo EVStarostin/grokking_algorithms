@@ -59,7 +59,7 @@ makePath(parents['fin']);
 console.log(path);
 
 function makePath(prop) {
-    path += ` <--- ${prop}`;
+    path += ` <-- ${prop}`;
     if (prop === 'start') {
         return;
     } else {

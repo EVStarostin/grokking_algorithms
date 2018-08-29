@@ -1,3 +1,5 @@
+/* алгоритм Дейкстры */
+
 const graph = {};
 graph["start"] = {};
 graph["start"]["a"] = 6;
@@ -9,8 +11,8 @@ graph["b"]["a"] = 3;
 graph["b"]["fin"] = 5;
 graph["fin"] = {};
 
-// console.log(Object.keys(graph["start"]));
-// console.log(graph["start"]["a"]);
+// console.log(Object.keys(graph["start"]));    // получение всех соседей начального узла
+// console.log(graph["start"]["a"]);            // веса ребер
 
 const costs = {};
 costs["a"] = 6;
